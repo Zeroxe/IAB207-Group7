@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+    <link rel="stylesheet" href="static\style\style.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Detail | RED CIRCLE</title>
+  </head>
+  <body>
+    <!---------------------------------- NAV BAR  ---------------------------------------------->
+    <div class="navbar-wrapper">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom">
+        <div class="container-fluid">
+          <a class="navbar-brand mx-auto d-lg-none" href="#">RED CIRCLE</a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="event-details.html">Events</a></li>
+              <li class="nav-item"><a class="nav-link" href="create-event.html">Create Event</a></li>
+              <li class="nav-item"><a class="nav-link" href="booking-history.html">Booking History</a></li>
+            </ul>
+
+            <a class="navbar-brand mx-auto d-none d-lg-block" href="index.html">RED CIRCLE</a>
+
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link" href="#">Search</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Sign In</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Sign up</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    
+    
+  <div class="event-form-wrapper">
+    <h2 class="event-form-title">Create an Event</h2>
+    <form>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label for="eventName" class="form-label">Event Name</label>
+            <input type="text" class="form-control" id="eventName" placeholder="Red Circle x Brisbane">
+          </div>
+          
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="eventTime" class="form-label">Venue</label>
+              <input type="text" id="eventTime" name="venue" class="form-control" style="cursor: pointer;">
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="eventDate" class="form-label">Date</label>
+              <input type="date" id="eventDate" name="eventDate" class="form-control" style="cursor: pointer;">
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="eventTime" class="form-label">Time start</label>
+              <input type="time" id="eventTime" name="eventTime" class="form-control" style="cursor: pointer;">
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="eventTime" class="form-label">Time end</label>
+              <input type="time" id="eventTime" name="eventTime" class="form-control" style="cursor: pointer;">
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="ticketPrice" class="form-label">Ticket Price (AUD)</label>
+              <input type="number" class="form-control" id="ticketPrice" placeholder="">
+            </div>
+          
+            <div class="col-md-6 mb-3">
+              <label for="ticketQuantity" class="form-label">Available Tickets</label>
+              <input type="number" class="form-control" id="ticketQuantity" placeholder="">
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="eventDescription" class="form-label">Description for event</label>
+            <textarea class="form-control" id="eventDescription" rows="4" placeholder="Short description of event"></textarea>
+          </div>
+
+              <div class="form-section">
+                  <label for="eventGenre" class="form-label">Select Genres</label>
+                  <select class="form-select" id="eventGenre" name="genres[]" multiple size="6">
+                    <option>Techno</option>
+                    <option>House</option>
+                    <option>Ambient</option>
+                    <option>Experimental</option>
+                    <option>Dubstep</option>
+                    <option>Breaks</option>
+                    <option>Drum & Bass</option>
+                    <option>Hardcore</option>
+                    <option>Minimal</option>
+                    <option>Trance</option>
+                  </select>
+                </div>
+  
+      <div class="form-section">
+        <label for="eventTags" class="form-label">Custom Tags</label>
+        <input type="text" class="form-control" id="eventTags" placeholder="e.g. sunrise, acid, vinyl-only">
+      </div>
+  
+      <button class="button-global">Create Event</button>
+        </div>
+        <div class="col-md-6">
+          <label class="upload-box" for="eventFlyer">
+            <input type="file" id="eventFlyer" accept="image/*">
+            <span class="upload-label">UPLOAD FLYER IMAGE</span>
+          </label>
+        </div>
+      </div>
+    </form>
+  </div>
+
+    <div class="footer">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="navbar-brand">RED CIRCLE</div>
+        </div>
+        <div class="col-md-6">
+          <a href="index.html">Home</a>
+          <a href="event-details.html">Events</a>
+          <a href="event-details.html">Events</a></li>
+          <a href="booking-history.html">Booking History</a></li>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
